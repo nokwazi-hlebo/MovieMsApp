@@ -1,0 +1,55 @@
+<!--
+including header content which is common for all pages
+-->
+<%- include ../layouts/header.ejs %>    
+        
+<% if (messages.error) { %>
+    <p style="color:red"><%- messages.error %></p>
+<% } %>
+ 
+<% if (messages.success) { %>
+    <p style="color:green"><%- messages.success %></p>
+<% } %>
+ 
+<form action="/movies/edit/<%= id %>" method="post" name="form1">
+    <table width="25%" border="0">
+        <tr> 
+            <td>Title</td>
+            <td><input type="text" name="m_title" id="m_title" value="<%= m_title %>" /></td>
+        </tr>
+        <tr> 
+            <td>Director</td>
+            <td><input type="text" name="director" id="director" value="<%= director %>" /></td>
+        </tr>
+        <tr> 
+            <td>Description</td>
+            <td><input type="text" name="description" id="description" value="<%= description %>" /></td>
+        </tr>
+        <tr> 
+            <td>Year</td>
+            <td><input type="text" name="year" value="<%= year %>" /></td>
+        </tr>
+        <tr> 
+            <td>Genre</td>
+            <td><input type="text" name="genre" value="<%= genre %>" /></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <!-- <td><input class="btn btn-primary" value="Edit" /></td>
+            <br> -->
+            <td><input class="btn btn-primary"  type="submit" name="Submit" value="Save" /></td>
+        </tr>
+    </table>
+    <input type="hidden" name="_method" value="PUT" />
+</form>
+ 
+<!--
+including footer content which is common for all pages
+-->
+<%- include ../layouts/footer.ejs %>
+
+<!-- 
+director    
+year    
+genre 
+-->

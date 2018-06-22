@@ -1,0 +1,31 @@
+<!--
+including header content which is common for all pages
+-->
+<%- include ../layouts/header.ejs %>      
+ 
+<% if (messages.error) { %>
+    <p style="color:red"><%- messages.error %></p>
+<% } %>
+ 
+<% if (messages.success) { %>
+    <p style="color:green"><%- messages.success %></p>
+<% } %>
+ 
+
+<form action = "/movies/search2" method= "POST">
+	<input type="search" name="search" placeholder="Search for a movie">
+	<input class="btn btn-primary" type="submit" name="submit" value="search">
+</form>
+
+
+
+
+
+<!--
+including footer content which is common for all pages
+-->
+<%- include ../layouts/footer.ejs %>
+
+<!-- 
+m_title
+-->

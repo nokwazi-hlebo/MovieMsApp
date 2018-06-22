@@ -1,0 +1,118 @@
+<html>
+
+    <head>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+            
+        <title><%= title %></title>
+
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <style>
+            body{
+    margin: 100px;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #262B42;
+    color: #B0B5B0;
+}
+
+#home{
+   color: #B0B5B0;
+   
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 100px;
+}
+
+.btn-primary3 {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 143px;
+}
+
+
+.link-color{
+    color: #B0B5B0;
+    opacity: 0.8;
+}
+
+.link-color:hover{
+    text-indent: green;
+    color: #099309;
+    opacity: 2px;
+}
+
+/* Style the input */
+input {
+  border-color: #262B42;
+  border-radius: : 2px solid;
+  width: auto;
+  padding: 2px;
+  position: right ! important;
+  font-size: 17px;
+  color: white;
+  text-align: center !important;
+}
+
+.Btn: hover{
+    color: green;
+}
+
+
+element.style {
+}
+@media (min-width: 576px)
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+@media (min-width: 576px)
+.mr-sm-2, .mx-sm-2 {
+    margin-right: .5rem!important;
+}
+
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Movie MS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+    
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Control Panel
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/movies/add">Create new movie</a>
+          <a class="dropdown-item" href="/movies">View all movies</a>
+          <a class="dropdown-item" href="/movies/search">Search movie</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<h1><%= title %></h1>
